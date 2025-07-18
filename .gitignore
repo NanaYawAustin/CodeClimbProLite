@@ -1,0 +1,13 @@
+# Ignore C# build files
+CodeClimbProLite.Api/bin/
+CodeClimbProLite.Api/obj/
+*.user
+*.suo
+
+# Ignore Node modules and env files
+CodeClimbProLiteFrontend/node_modules/
+CodeClimbProLiteFrontend/.env
+
+# System
+.DS_Store
+Thumbs.db
