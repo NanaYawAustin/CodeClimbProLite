@@ -1,0 +1,47 @@
+.login-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url('/login-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.login-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: 0;
+}
+
+.login-card {
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+}
+
+.login-card h3,
+.login-card h5,
+.login-card label,
+.login-card small,
+.login-card a {
+  color: white;
+  text-shadow: 1px 1px 2px black; /* Soft black outline for contrast */
+}
