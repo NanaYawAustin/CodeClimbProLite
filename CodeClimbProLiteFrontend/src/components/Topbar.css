@@ -1,0 +1,31 @@
+/* src/components/Topbar.css */
+
+.navbar {
+  transition: all 0.3s ease-in-out;
+  background-color: #f8f9fa; /* light gray */
+  z-index: 1040;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  color: #333;
+}
+
+.btn-outline-secondary {
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+}
+body.bg-dark {
+  background-color: #1e1e2f !important;
+}
+
+.navbar .btn {
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.navbar .dropdown-menu {
+  min-width: 180px;
+  font-size: 0.9rem;
+}

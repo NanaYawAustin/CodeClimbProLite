@@ -1,14 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import DashboardLayout from './components/DashboardLayout';
+import Dashboard from './pages/Dashboard';
 
 function App() {
+  const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    document.body.className = theme; // Add class to <body>
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+  };
+
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+
+        {/* Dashboard route with layout */}
+        <Route
+          path="/dashboard"
+          element={
+            <DashboardLayout toggleTheme={toggleTheme} currentTheme={theme} />
+          }
+        >
+          <Route index element={<Dashboard />} />
+        </Route>
       </Routes>
     </Router>
   );
