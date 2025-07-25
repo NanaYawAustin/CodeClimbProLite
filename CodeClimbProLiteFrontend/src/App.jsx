@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import DashboardLayout from './components/DashboardLayout';
-import Dashboard from './pages/Dashboard';
+import Dashboard from './Pages/Dashboard';
 
 function App() {
   const [theme, setTheme] = useState('light');
