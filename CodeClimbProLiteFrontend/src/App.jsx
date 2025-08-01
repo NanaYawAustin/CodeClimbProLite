@@ -4,7 +4,8 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import DashboardLayout from './components/DashboardLayout';
 import Dashboard from './Pages/Dashboard';
-import Analytics from './pages/Analytics';
+import Analytics from './Pages/Analytics';
+import Goals from './Pages/Goals';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -31,6 +32,7 @@ function App() {
           }
         >
           <Route path="/dashboard/analytics" element={<Analytics />} />
+          <Route path="/dashboard/goals" element={<Goals />} />
           <Route index element={<Dashboard />} />
         </Route>
       </Routes>

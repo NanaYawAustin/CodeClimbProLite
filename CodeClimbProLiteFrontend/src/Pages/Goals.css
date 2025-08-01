@@ -1,0 +1,330 @@
+/* Goals.css */
+
+.goals-header {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3);
+}
+
+.goals-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.goals-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  transition: all 0.3s ease;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #28a745, #20c997);
+  border-radius: 15px 15px 0 0;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Weekly Goals Cards */
+.weekly-goal-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 15px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.weekly-goal-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Goal Cards */
+.goal-card {
+  position: relative;
+  min-height: 350px;
+}
+
+.goal-card .badge {
+  font-size: 0.75rem;
+  padding: 6px 12px;
+}
+
+.completed-goal-card {
+  background: linear-gradient(135deg, #f8fff9 0%, #e8f5e8 100%);
+  border-left: 4px solid #28a745;
+}
+
+.completed-goal-card::before {
+  background: linear-gradient(90deg, #28a745, #20c997);
+}
+
+/* Navigation Tabs */
+.goals-tabs .nav-pills .nav-link {
+  background: transparent;
+  color: #6c757d;
+  border-radius: 25px;
+  padding: 12px 24px;
+  margin: 0 8px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.goals-tabs .nav-pills .nav-link:hover {
+  background: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+  border-color: rgba(40, 167, 69, 0.2);
+}
+
+.goals-tabs .nav-pills .nav-link.active {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+/* Goal Info Section */
+.goal-info {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Goal Tasks */
+.goal-tasks {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.form-check-input:checked {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.form-check-label {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Goal Actions */
+.goal-actions {
+  padding-top: 15px;
+  border-top: 1px solid #e9ecef;
+}
+
+.goal-actions .btn {
+  border-radius: 20px;
+  padding: 6px 15px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.goal-actions .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Progress Bars */
+.progress {
+  height: 6px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  transition: width 0.6s ease;
+  border-radius: 10px;
+}
+
+/* Circular Progress Bar Styling */
+.CircularProgressbar .CircularProgressbar-path {
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Modal Styling */
+.modal-content {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border-radius: 15px 15px 0 0;
+  border-bottom: none;
+}
+
+.modal-header .btn-close {
+  filter: invert(1);
+}
+
+.modal-body {
+  padding: 30px;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 8px;
+}
+
+.form-control, .form-select {
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Button Styling */
+.btn-primary {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+  background: linear-gradient(135deg, #218838 0%, #1e7e8c 100%);
+}
+
+.btn-light {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 25px;
+  color: #28a745;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.btn-light:hover {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  color: #28a745;
+}
+
+/* Priority Badge Colors */
+.badge.bg-danger { background: #dc3545 !important; }
+.badge.bg-warning { background: #ffc107 !important; color: #212529 !important; }
+.badge.bg-success { background: #28a745 !important; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .goals-header {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .goals-header h2 {
+    font-size: 2rem;
+  }
+  
+  .dashboard-card {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .goal-card {
+    min-height: auto;
+  }
+  
+  .goals-tabs .nav-pills .nav-link {
+    padding: 8px 16px;
+    margin: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .weekly-goal-card {
+    margin-bottom: 15px;
+  }
+}
+
+/* Animation for goal cards */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.goal-card {
+  animation: slideInUp 0.6s ease-out;
+}
+
+.completed-goal-card {
+  animation: slideInUp 0.8s ease-out;
+}
+
+/* Hover effects for interactive elements */
+.form-check-input {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-check-input:hover {
+  transform: scale(1.1);
+}
+
+/* Custom scrollbar for modal */
+.modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #218838 0%, #1e7e8c 100%);
+}
