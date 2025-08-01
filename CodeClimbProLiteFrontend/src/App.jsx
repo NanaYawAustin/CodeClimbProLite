@@ -4,6 +4,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import DashboardLayout from './components/DashboardLayout';
 import Dashboard from './Pages/Dashboard';
+import Analytics from './pages/Analytics';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -29,6 +30,7 @@ function App() {
             <DashboardLayout toggleTheme={toggleTheme} currentTheme={theme} />
           }
         >
+          <Route path="/dashboard/analytics" element={<Analytics />} />
           <Route index element={<Dashboard />} />
         </Route>
       </Routes>
